@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "1\r\nsyauqi\r\n100\r\n1\r\nsyauqi\r\n100\r\n4",
+      "output": "syauqi sudah ada di dalam list",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nsyauqi\r\n100\r\n2\r\nsyauqi\r\n4",
+      "output": "syauqi : 100",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3",
+      "setup": "",
+      "run": "./main",
+      "input": "1\r\nsyauqi\r\n100\r\n1\r\ndavid\r\n110\r\n3\r\n4",
+      "output": "david: 110\r\nsyauqi: 100",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4",
+      "setup": "",
+      "run": "./main",
+      "input": "6",
+      "output": "Pilihan tidak valid",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "5",
+      "setup": "",
+      "run": "./main",
+      "input": "2\r\ntitan\r\n4",
+      "output": "Mahasiswa dengan nama titan tidak ada",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
