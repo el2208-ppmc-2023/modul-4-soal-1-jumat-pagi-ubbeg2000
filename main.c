@@ -71,47 +71,52 @@ int main() {
         scanf("%d", &choice);
         switch (choice) {
         case 1:
-            printf("Masukkan nama: ");
-            scanf("%s", name);
-            int ketemu = 0;
-            for (int i = 0; i < num_mahasiswa; i++) {
-                if (strcmp(name, array_mahasiswa[i].name) == 0) {
-                    ketemu = 1;
+            {
+                printf("Masukkan nama: ");
+                scanf("%s", name);
+                int ketemu = 0;
+                for (int i = 0; i < num_mahasiswa; i++) {
+                    if (strcmp(name, array_mahasiswa[i].name) == 0) {
+                        ketemu = 1;
+                        break;
+                    }
+                }
+                if (ketemu == 1){
+                    printf("%s sudah ada di dalam list\n",name);
+                    break;
+                }else{
+                    printf("Masukkan nilai: ");
+                    scanf("%d", &value);
+                    add_mahasiswa(name, value);
                     break;
                 }
             }
-            if (ketemu == 1){
-                printf("%s sudah ada di dalam list\n",name);
-                break;
-            }else{
-                printf("Masukkan nilai: ");
-                scanf("%d", &value);
-                add_mahasiswa(name, value);
-                break;
-            }
-            
         case 2:
-            printf("Masukkan nama: ");
-            scanf("%s", name);
-            int found = 0;
-            for (int i = 0; i < num_mahasiswa; i++) {
-                if (strcmp(name, array_mahasiswa[i].name) == 0) {
-                    printf("%s: %d\n", array_mahasiswa[i].name, array_mahasiswa[i].value);
-                    found = 1;
-                    break;
+            {
+                printf("Masukkan nama: ");
+                scanf("%s", name);
+                int found = 0;
+                for (int i = 0; i < num_mahasiswa; i++) {
+                    if (strcmp(name, array_mahasiswa[i].name) == 0) {
+                        printf("%s: %d\n", array_mahasiswa[i].name, array_mahasiswa[i].value);
+                        found = 1;
+                        break;
+                    }
                 }
-            }
-            if (!found) {
-                printf("Mahasiswa dengan nama %s tidak ada\n", name);
+                if (!found) {
+                    printf("Mahasiswa dengan nama %s tidak ada\n", name);
+                }
             }
             break;
         case 3:
-            sort_mahasiswa();
-            print_mahasiswa();
+            {
+                sort_mahasiswa();
+                print_mahasiswa();
+            }
             break;
         case 4:
             printf("DADAHHHH");
-            break;
+            return 0;
         default:
             printf("Pilihan tidak valid\n");
             break;
