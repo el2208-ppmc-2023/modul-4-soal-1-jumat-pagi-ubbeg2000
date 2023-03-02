@@ -8,7 +8,7 @@
       "output": "syauqi sudah ada di dalam list",
       "comparison": "included",
       "timeout": 1,
-      "points": 10
+      "points": 20
     },
     {
       "name": "2",
@@ -18,7 +18,7 @@
       "output": "syauqi : 100",
       "comparison": "included",
       "timeout": 1,
-      "points": 10
+      "points": 20
     },
     {
       "name": "3",
@@ -28,7 +28,7 @@
       "output": "david: 110\r\nsyauqi: 100",
       "comparison": "included",
       "timeout": 1,
-      "points": 10
+      "points": 20
     },
     {
       "name": "4",
@@ -38,7 +38,7 @@
       "output": "Pilihan tidak valid",
       "comparison": "included",
       "timeout": 1,
-      "points": 10
+      "points": 20
     },
     {
       "name": "5",
@@ -48,7 +48,7 @@
       "output": "Mahasiswa dengan nama titan tidak ada",
       "comparison": "included",
       "timeout": 1,
-      "points": 10
+      "points": 20
     }
   ]
 }
