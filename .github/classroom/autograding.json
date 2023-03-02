@@ -15,7 +15,7 @@
       "setup": "",
       "run": "./main",
       "input": "1\r\nsyauqi\r\n100\r\n2\r\nsyauqi\r\n4\r\n4\r\n4",
-      "output": "syauqi : 100",
+      "output": "syauqi: 100",
       "comparison": "included",
       "timeout": 1,
       "points": 20
